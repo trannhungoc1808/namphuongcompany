@@ -1,0 +1,791 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Công ty TNHH MTV Nam Phương</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/logoloader.png' %}" rel="icon">
+  <link href="{% static '/img/logoloader.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
+
+  <style>
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 14px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+  <!-- =======================================================
+  * Template Name: BizLand - v3.3.0
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:hoangmyanh1701@gmail.com">hoangmyanh1701@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+84 0931 522 388</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="{%url 'homeenglish'%}" class="linkedin">English</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <marquee>Nam Phuong Company always gives you the best products, contact us: +84 0931 522 388</marquee>
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{% static 'base.html' %}">Nam Phuong Company<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Giới thiệu</a></li>
+          <li><a class="nav-link scrollto" href="#services">Dịch Vụ</a></li>
+          <li><a class="nav-link scrollto " href="#Products">Sản phẩm</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Liên hệ</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Công ty TNHH MTV <span>Nam Phương</span></h1>
+      <h2>Chúng tôi bán cung cấp bưởi được trồng trong trang trại của chúng tôi.</h2>
+      <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Tìm hiểu thêm</a>
+        <a href="https://www.youtube.com/watch?v=Krjj8FvY508&feature=youtu.be" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Xem video giới thiệu</span></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Nguồn cung rộng rãi</a></h4>
+              <p class="description">Với số lượng lớn chuỗi cung ứng, chúng tôi sẽ đáp ứng nhu cầu của bạn.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Chốt đơn hàng nhanh chóng</a></h4>
+              <p class="description">Với chúng tôi, khách hàng là thượng đế, vì vậy, khi bạn cần chúng tôi sẽ đáp ứng nhanh chóng.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Chuyển phát nhanh</a></h4>
+              <p class="description">Đảm bảo dịch vụ giao hàng nhanh, gọn, lẹ, an toàn trong quá trình vận chuyển.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Kết nối quốc tế</a></h4>
+              <p class="description">Chúng tôi tự hào là nhà cung cấp bưởi lớn nhất nhì trên thế giới.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Giới thiệu</h2>
+          <h3>Giới thiệu về <span>Chúng tôi</span></h3>
+          <p>Không có bưởi tệ! Chỉ có bưởi tệ hoặc quá tệ! Đó là trước khi bạn mua bưởi của chuỗi cung ứng chúng tôi!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="{% static '/img/about.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Chúng tôi tự tin cung cấp cho bạn những sản phẩm tốt nhất.</h3>
+            <p class="fst-italic">
+              Sản phẩm của chúng tôi tự tin về mức độ sạch và tươi, đặc biệt là sản phẩm bưởi da xanh
+            </p>
+            <ul>
+              <li>
+                <i class="bx bx-store-alt"></i>
+                <div>
+                  <h5>Hàng luôn có sẵn trong kho</h5>
+                  <p>Đến với chúng tôi, khách hàng sẽ không bao giờ phải lo hết hàng vì bưởi của chúng tôi luôn được chuẩn bị từ trước.</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>Hình ảnh được lấy từ chính nông trại của chúng tôi.</h5>
+                  <p>Không phải lo ảnh khác chất lượng sản phẩm vì tất cả ảnh trên website của chúng tôi đều được chụp từ sản phẩm thật từ nông trại của chúng tôi.</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-cube"></i>
+                <div>
+                  <h5>Vận chuyển</h5>
+                  <p>Những hình ảnh về quá trình sản xuất/vận chuyển của chúng tôi:</p>
+                  <div class="container col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="zoom-out" data-aos-delay="100">
+                    <a href="{% url 'transportvie' %}" class="btn" style="vertical-align:middle"><span><b>Transport</b></span></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p>
+              Bưởi da xanh là giống bưởi có nguồn gốc đầu tiên ở xã Thanh Tân, huyện Mỏ Cày Bắc, tỉnh Bến Tre. Bưởi da xanh có dạng hình cầu, trung bình cân nặng từ 1,2 - 2,5kg / quả; vỏ có màu xanh lục đến xanh vàng khi chín, dễ bóc và khá mỏng; tép bưởi đỏ hồng, bó chặt và dễ tách khỏi vách ngăn; ngọt và không chua (brix: 9,5–12%); mùi thơm; không hạt đến ít hạt (có thể từ 30 hạt / quả); Tỷ lệ thịt / quả> 55% .Giống bưởi này đã được Bộ Nông nghiệp và Phát triển Nông thôn Việt Nam công nhận là giống quốc gia. Bưởi da xanh đã được xuất khẩu sang 50 thị trường khác nhau trên thế giới. Ở điều kiện bình thường, bưởi da xanh có thể bảo quản lâu hơn 15 ngày.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Độ đẹp<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Độ ngon <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Độ chua <i class="val">45%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Độ ngọt <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Độ sạch sẽ <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Độ tươi <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="288" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Khách hàng hài lòng</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Đơn hàng đã giao</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Số giờ đã hỗ trợ</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Khách hàng quan trọng</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Clients Section =======
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static '/img/clients/client-1.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static '/img/clients/client-2.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static '/img/clients/client-3.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static '/img/clients/client-4.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static '/img/clients/client-5.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static '/img/clients/client-6.png' %}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Dịch vụ</h2>
+          <h3>Những <span>Dịch vụ</span> chúng tôi cung cấp</h3>
+          <p>Công ty chúng tôi luôn đi đầu về dịch vụ cũng như chất lượng bưởi cho khách hàng !!!.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4>Quà tặng</a></h4>
+              <p>Bạn cần bưởi làm quà tặng? Chúng tôi sẵn sàng cung cấp cho bạn dịch vụ gói quà.</p>
+              <p><b>Số điện thoại hỗ trợ:</b> +840123456789</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Nhận đơn hàng sỉ và lẻ</a></h4>
+              <p>Chúng tôi chấp nhận <b>bất kỳ đơn đặt hàng</b> ! Nhận đơn hàng sỉ, lẻ và đơn riêng lẻ tùy thuộc vào nhu cầu của khách hàng.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4>Giao hàng miễn phí</a></h4>
+              <p>Chúng tôi nhận giao hàng miễn phí trong nước nếu dơn hàng của bạn dưới <b>7kg</b></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>Vận chuyển quốc tế</a></h4>
+              <p>Chúng tôi nhận đơn hàng giao hàng quốc tế nếu bạn có nhu cầu ! Dù bạn ở đâu, chúng tôi cũng giao hàng tận nơi </p>
+              <p><b>(ngoại trừ Nam Cực và Bắc Cực)</b></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-right" data-aos-delay="100">
+            <img src="{% static '/img/test.jpg' %}" class = "img-fluid" alt = "" >
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Hợp đồng có lợi</a></h4>
+              <p>Hợp đồng <b>luôn luôn</b> đặt quyền lợi của khách hàng lên hàng đầu !</p>
+            </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static '/img/testimonials/testimonials-1.png' %}" class="testimonial-img" alt="">
+                <h3>Trong_nguyen091</h3>
+                <h4>Hà Tĩnh</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Bưởi rất ngon, ship hàng cực nhanh luôn nên khi bưởi về tới còn tươi lắm !
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static '/img/testimonials/testimonials-5.png' %}" class="testimonial-img" alt="">
+                <h3>ThơThơ219</h3>
+                <h4>Hồ Chí Minh</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Bạn nhân viên hỗ trợ rất nhiệt tình, bưởi ngọt, ngon, sẽ còn order !
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static '/img/testimonials/testimonials-5.png' %}" class="testimonial-img" alt="">
+                <h3>Nguyễn Xuân Anh</h3>
+                <h4>TP.Cần Thơ</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Mặc dù hàng giao tận 10 ngày, nhưng độ tươi thì khỏi bàn các bạn ạ !!!!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static '/img/testimonials/testimonials-1.png' %}" class="testimonial-img" alt="">
+                <h3>Thomas Mitchell</h3>
+                <h4>37 Joe Forge,Huntville,SE18 7QX </h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I was quite surprised about the speed of delivery as well as the freshness and sweetness of the pomelo, my whole family loves your products! We will be ordering more in the near future.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static '/img/testimonials/testimonials-5.png' %}" class="testimonial-img" alt="">
+                <h3>Breanne Denesik</h3>
+                <h4>50089 Claudia Rue Apt. 527 Barlow, KY 42024</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The product quality matches the description and I really like the consulting team, very enthusiastic in advising me on the gift packages that I bring to give away !
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="Products" class="Products">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Sản phẩm</h2>
+          <h3>Các loại <span>Bưởi</span></h3>
+          <p>Chúng tôi tự hào mang đến cho khách hàng </p>
+          <p>các loại bưởi tốt nhất trên thị trường hiện nay.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="Products-flters">
+              <li data-filter="*" class="filter-active">Tất cả</li>
+              <li data-filter=".filter-app">Bưởi đặc biệt</li>
+              <li data-filter=".filter-card">Bưởi loại 1</li>
+              <li data-filter=".filter-web">Bưởi loại 2</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row Products-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 Products-item filter-app">
+            <img src="{% static '/img/Products/Products-7.png' %}" class="img-fluid" alt="">
+            <div class="Products-info">
+              <h4>Bưởi đặc biệt</h4>
+              <p>SBưởi đặc biệt</p>
+              <a href="{% static '/img/Products/Products-7.png' %}" data-gallery="ProductsGallery"></i></a>
+              <a href="{% url 'pdetailsvie' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 Products-item filter-card">
+            <img src="{% static '/img/Products/Products-8.jpg' %}" class="img-fluid" alt="">
+            <div class="Products-info">
+              <h4>Bưởi loại 1</h4>
+              <p>Bưởi loại 1</p>
+              <a href="{% static '/img/Products/Products-8.jpg' %}" data-gallery="ProductsGallery"></i></a>
+              <a href="{% url 'pdetails2vie' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 Products-item filter-web">
+            <img src="{% static '/img/Products/Products-9.jpg' %}" class="img-fluid" alt="">
+            <div class="Products-info">
+              <h4>Bưởi loại 2</h4>
+              <p>Bưởi loại 2</p>
+              <a href="{% static '/img/Products/Products-9.jpg' %}" data-gallery="ProductsGallery"></i></a>
+              <a href="{% url 'pdetails3vie' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3><span>Các câu hỏi</span> thường nhận</h3>
+          <p>Tại đây, chúng tôi sẽ giải đáp những câu hỏi thường được hỏi nhất.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Bưởi của chúng tôi có tươi, sạch không ?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Câu trả lời là, có ! Bưởi của chúng tôi được trồng và bảo quản cũng như đóng gói trong dây chuyền khép kín nên bạn hoàn toàn yên tâm về độ vô trùng của sản phẩm.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Chúng tôi hiện tại có những loại bưởi gì ?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Hiện tại chúng tôi đang có sẵn trong kho bưởi da xanh nhưng được chia thành nhiều loại dựa theo độ ngọt và ngoại hình của bưởi ! Có 3 loại chính là loại đặc biệt, loại 1 và loại 2.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Thời gian vận chuyển bao lâu ?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Thời gian vận chuyển trung bình là từ 10-15 ngày trong nước và đối với các đơn hàng quốc tế thì 15-20 ngày hoặc lâu . tùy thuộc vào địa điểm được vận chuyển tới
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Chúng tôi có hỗ trợ những phương thức thanh toán nào ?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Chúng tôi hỗ trợ thanh toán qua Paypal, WesternUnion, Visa, E-Banking hoặc nhận hàng và thanh toán tại bưu cục gần nhất.
+                  </p>
+                </div>
+              </li>
+ <!-- ======= test ======= -->
+ <section id="faq" class="faq section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Banner</h2>
+      <h3>This is<span> Nam Phuong Company's banner</span></h3>
+    </div>
+    <img src="{% static '/img/neo.png' %}" class="img-fluid" alt="">
+              <!--
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </p>
+                </div>
+              </li>
+-->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Liên hệ</h2>
+          <h3><span>Trò chuyện cùng chúng tôi</span></h3>
+          <p>Bạn hài lòng với sản phẩm của chúng tôi và hứng thú với các dự án tương lai của chúng tôi ? Hãy liên hệ với chúng tôi !</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Địa chỉ:</h3>
+              <p>14 Ấp Quới Hưng-xã Quới Sơn-Châu Thành-Bến Tre</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <p>hoangmyanh1701@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Số điện thoại:</h3>
+              <p>+84 0931 522 388</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31402.337952250957!2d106.3825624105948!3d10.318480578519578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aaefb79fb36df%3A0xea0504afed6321eb!2zUXXhu5tpIFPGoW4sIENow6J1IFRow6BuaCwgQuG6v24gVHJlLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1627565659063!5m2!1svi!2s" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+
+
+<!--
+          <div class="col-lg-6">
+            <form  method="POST" role="form" class="php-email-form">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        -->
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container py-4">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Nam Phương Company<span>.</span></h3>
+            <p>
+              14 Ấp Quới Hưng-xã Quới Sơn-Châu Thành-Bến Tre<br>
+              -Châu Thành-Bến Tre<br>
+              VietNam <br><br>
+              <strong>Số điện thoại:</strong> +84 0931 522 388<br>
+              <strong>Email:</strong> hoangmyanh1701@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Các ứng dụng xã hội chúng tôi đang dùng:</h4>
+            <p></p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Nam Phuong Company</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+        Designed by <a href="">Neo'nJ3n</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static '/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/js/main.js' %}"></script>
+
+</body>
+
+</html>

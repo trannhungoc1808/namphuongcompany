@@ -1,0 +1,382 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Transport</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png' %}" rel="icon">
+  <link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizLand - v3.3.0
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:hoangmyanh1701@gmail.com">hoangmyanh1701@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+84 0931 522 388</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://www.twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="{% url 'transportvie' %}" class="specialpomelo">Vietnamese</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <marquee>Nam Phuong Company always gives you the best products, contact us: +84 0931 522 388</marquee>
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{% url 'home' %}">Nam Phuong Company<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#Products">Transport and Harvest</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" data-aos="fade-up">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Transport and harvest Activities</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+
+            <li>Transport and harvest</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- Breadcrumbs Section -->
+
+    <!-- ======= Products Details Section ======= -->
+    <section id="Products-details" class="Products-details">
+      <div class="container">
+        <style>
+        .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+          }
+        </style>
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="Products-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/harvest/thuhoach1.jpg' %}" alt="">
+                  <div class="text">This is our products at the farms.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/harvest/thuhoach2.jpg' %}" alt="">
+                  <div class="text">Inside of our products.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/harvest/thuhoach3.jpg' %}" alt="">
+                  <div class="text">Our products while on the trees.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/harvest/thuhoach4.jpg' %}" alt="">
+                  <div class="text">Packing products to prepare for export.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/harvest/thuhoach5.jpg' %}" alt="">
+                  <div class="text">Packing products to prepare for export.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static '/img/harvest/thuhoach6.jpg' %}" alt="">
+                  <div class="text">This is the flower of the product on the subsequent seedlings on our farms.</div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="Products-info">
+              <h3>Harvest the products</h3>
+              <ul>
+                <li><strong>Locate</strong>: From the farms in our country.</li>
+                <li><strong>Map address</strong>: We will update regularly.</li>
+              </ul>
+            </div>
+            <div class="Products-description">
+              <h2>Description:</h2>
+              <p>
+                Next to are the pictures of harvesting and packing products prepared for export of our company.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Products Details Section -->
+ <!-- ======= Featured Services Section ======= -->
+ <section id="featured-services" class="featured-services">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row">
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+          <h4 class="title"><a href="">Harvest from the garden</a></h4>
+          <p class="description">Our pomelos are harvested in the garden, so the quality of the product is always fresh.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><i class="bx bx-file"></i></div>
+          <h4 class="title"><a href="">Insurance is always reputable</a></h4>
+          <p class="description">If there is an unfortunate, unexpected incident, our company's customers will be guaranteed to compensate the damage value at the market price.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><i class="bx bx-tachometer"></i></div>
+          <h4 class="title"><a href="">Fast shipping</a></h4>
+          <p class="description">Ensure fast, compact, fast and safe delivery service during transportation.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon"><i class="bx bx-world"></i></div>
+          <h4 class="title"><a href="">Reputable transport company</a></h4>
+          <p class="description">The transport company we choose is always a service with a large scale and is noticed by many other businesses, so please rest assured about our service.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Featured Services Section -->
+
+<!-- ======= Products Details Section ======= -->
+<section id="Products-details" class="Products-details">
+  <div class="container">
+    <style>
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+      }
+    </style>
+    <div class="row gy-4">
+
+      <div class="col-lg-8">
+        <div class="Products-details-slider swiper-container">
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="{% static '/img/transport/tanthanh1.jpg' %}" alt="">
+              <div class="text">Tan Thanh Border</div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static '/img/transport/tanthanhmap.png' %}" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static '/img/transport/mongcai1.jpg' %}" alt="">
+              <div class="text">Mong Cai Border</div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static '/img/transport/mongcaimap.png' %}" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static '/img/transport/catlai1.jpg' %}" alt="">
+              <div class="text">Cat Lai Port (C Enntrance gate)</div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static '/img/transport/catlai2.jpg' %}" alt="">
+              <div class="text">Cat Lai Port</div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static '/img/transport/catlaimap.png' %}" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="Products-info">
+          <h3>The way we export products.</h3>
+          <ul>
+            <li><strong>Locate</strong>:<li>Tan Thanh Border (Lang Son)</li>
+                                        <li>Mong Cai Border (Quang Ninh)</li>
+                                        <li>Cat Lai Port (Ho Chi Minh)</li>
+            <li><strong>Map address</strong>: <li>Tan Thanh: 22.0031005075512, 106.68276067029043</li>
+                                              <li>Mong Cai: 21.5368844062987, 107.96976740740372</li>
+                                              <li>Cat Lai: 10.766956217586634, 106.79532363862643</li>
+          </ul>
+        </div>
+        <div class="Products-description">
+          <h2>Description:</h2>
+          <p>
+            These are the borders and ports where we export our products.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Products Details Section -->
+<!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="faq section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>F.A.Q</h2>
+      <h3>Frequently Asked <span>Questions</span></h3>
+      <p>We will answer the questions you often ask.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Are our pomelos clean?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                The answer is yes, our pomelos are grown and preserved as well as packed in a closed chain, so you can be assured of the sterility of the product.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">What kind of pomelos do we have?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We only have green skin grapefruit but are divided into many types according to the sweetness and beauty of the grapefruit! There are 3 main types are special, type 1 and type 2
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">How long is the average shipping time?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Average shipping time is 10-15 days domestically and if you have international needs it is 15-20 days depending on your country
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What payment methods do we have?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We support payment via Paypal, WesternUnion, Visa, E-Banking, or pick up and pay at the nearest post office
+              </p>
+            </div>
+          </li>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Nam Phương company<span>.</span></h3>
+            <p>
+              14 Ấp Quới Hưng-xã Quới Sơn <br>
+              -Châu Thành-Bến Tre<br>
+              Việt Nam <br><br>
+              <strong>Phone:</strong> +84 0931 522 388<br>
+              <strong>Email:</strong> hoangmyanh1701@gmail.com<br>
+            </p>
+          </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static '/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/js/main.js' %}"></script>
+
+</body>
+
+</html>
